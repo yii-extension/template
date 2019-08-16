@@ -1,13 +1,13 @@
 {
-    "name": "terabytesoftw/github-template",
-    "type": "yii2-extension",
-    "description": "Template giyhub yii2",
+    "name": "yii-extensions/template",
+    "type": "library",
+    "description": "Template giyhub yii",
     "keywords": [
         "github",
         "template",
         "yii"
     ],
-    "homepage": "https://github.com/terabytesoftw/github-template",
+    "homepage": "https://github.com/yii-extensions/template",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -18,28 +18,20 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=5.4.0",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "yiisoft/yii2": "^2.0.20",
-        "yiisoft/yii2-bootstrap4": "^2.0.3"
+        "php": "^7.2.0"
     },
     "require-dev": {
         "codeception/codeception": "^3.0",
         "codeception/c3": "2.*",
-        "codeception/specify": "*",
-        "codeception/verify": "*",
         "dms/phpunit-arraysubset-asserts": "^0.1.0",
         "hiqdev/composer-config-plugin": "^1.0@dev",
-        "monolog/monolog": "*",
-        "yiisoft/yii2-debug": "~2.1.0",
-        "yiisoft/yii2-gii": "~2.1.0",
-        "yiisoft/yii2-faker": "~2.0.0"
+        "monolog/monolog": "*"
     },
     "autoload": {
-        "psr-4": {"terabytesoft\\template\\github\\": "src/"}
+        "psr-4": {"Yii\\Extensions\\": "src/"}
     },
     "autoload-dev": {
-        "psr-4": {"terabytesoft\\template\\github\\tests\\": "tests/"}
+        "psr-4": {"Yii\\Extensions\\tests\\": "tests/"}
 	},
     "config": {
         "process-timeout": 1800,
@@ -51,15 +43,13 @@
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         },
-        "installer-types": [
-            "bower-asset",
-            "npm-asset"
-        ],
-        "installer-paths": {
-            "./node_modules/{$name}": [
-                "type:bower-asset",
-                "type:npm-asset"
-            ]
+        "config-plugin": {
+            "defines": "config/defines.php",
+            "common": "config/common.php",
+            "params": [
+                "config/params.php"
+            ],
+            "web": "config/web.php"
         }
     },
     "repositories": [
