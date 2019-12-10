@@ -18,15 +18,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.2.0"
+        "php": "^7.4.0"
     },
     "require-dev": {
         "codeception/codeception": "^3.0",
         "codeception/c3": "2.*",
         "dms/phpunit-arraysubset-asserts": "^0.1.0",
-        "hiqdev/composer-config-plugin": "^1.0@dev",
-        "monolog/monolog": "*",
-        "phpstan/phpstan": "^0.11.13"
+        "hiqdev/composer-config-plugin": "^1.0@dev"
     },
     "autoload": {
         "psr-4": {"Yii\\Extensions\\": "src/"}

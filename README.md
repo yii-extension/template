@@ -34,7 +34,7 @@
 ### **REQUIREMENTS:**
 
 - The minimum requirement by this project template that your Web server supports:
-    - PHP 7.2 or higher.
+    - PHP 7.4 or higher.
     - [Composer Config Plugin](https://github.com/hiqdev/composer-config-plugin)
 
 ### **RUN TESTS CODECEPTION:**
