@@ -1,10 +1,12 @@
 build:
-  nodes:
-    analysis:
-      tests:
-        override:
-          - php-scrutinizer-run
-
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - php-scrutinizer-run
+filter:
+    paths:
+        - "src/*"
 checks:
     php: true
 tools:
@@ -12,9 +14,3 @@ tools:
         enabled: true
     external_code_coverage:
         timeout: 600
-filter:
-    excluded_paths:
-        - config/*
-        - docs/*
-        - tests/*
-        - vendor/*

@@ -1,7 +1,6 @@
-preset: psr2
+preset: psr12
 
 finder:
   exclude:
     - docs
-    - tests/_support
     - vendor

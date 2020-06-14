@@ -3,71 +3,41 @@
         <img src="https://lh3.googleusercontent.com/9Gh9KzBOJXEmZZBlcASTrmUGNzjfaD6HHt0qtRthAX0a4jBD6-qBrJnglg5bYZGUh5wmR-idUWVHJ3Jh0HKKchnuPfwtD8YV3pHVZaDftfhx0da84gkG2MoPSSSqdVqh5tqTke0Q=w2400" height="50px;">
     </a>
     <h1 align="center">Github Template</h1>
+    <br>
 </p>
 
-<p align="center">
-    <a href="https://packagist.org/packages/yii-extensions/template" target="_blank">
-        <img src="https://poser.pugx.org/yii-extensions/template/v/unstable" alt="Unstable Version">
-    </a>
-    <a href="https://travis-ci.org/yii-extensions/template" target="_blank">
-        <img src="https://travis-ci.org/yii-extensions/template.svg?branch=master" alt="Build Status">
-    </a>  
-    <a href="https://scrutinizer-ci.com/g/yii-extensions/template/" target="_blank">
-        <img src="https://scrutinizer-ci.com/g/yii-extensions/template/badges/build.png?b=master" alt="Build Status">
-    </a>
-    <a href="https://scrutinizer-ci.com/g/yii-extensions/template/" target="_blank">
-        <img src="https://scrutinizer-ci.com/g/yii-extensions/template/badges/coverage.png?b=master" alt="Build Status">
-    </a>    
-    <a href="https://scrutinizer-ci.com/g/yii-extensions/template/?branch=master" target="_blank">
-     	<img src="https://scrutinizer-ci.com/g/yii-extensions/template/badges/quality-score.png?b=master" alt="Code Quality">
-    </a>
-    <a href="https://scrutinizer-ci.com/code-intelligence" target="_blank">
-     	<img src="https://scrutinizer-ci.com/g/yii-extensions/template/badges/code-intelligence.svg?b=master" alt="Code Intelligence Status">
-    </a>
-    <a href="https://codeclimate.com/github/yii-extensions/template/maintainability" target="_blank">
-        <img src="https://api.codeclimate.com/v1/badges/8bfb0df72b3472f6b83d/maintainability" alt="Maintainability">
-    </a>		
-</p>
+[![Latest Stable Version](https://poser.pugx.org/yii-extension/______/v/stable.png)](https://packagist.org/packages/yii-extension/______)
+[![Total Downloads](https://poser.pugx.org/yii-extension/______/downloads.png)](https://packagist.org/packages/yii-extension/______)
+[![Build Status](https://github.com/yii-extension/______/workflows/build/badge.svg)](https://github.com/yii-extension/______/actions?query=workflow%3Abuild)
+[![Code Coverage](https://scrutinizer-ci.com/g/yii-extension/______/badges/coverage.png)](https://scrutinizer-ci.com/g/yii-extension/______/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yii-extension/______/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yii-extension/______/?branch=master)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https://badge-api.stryker-mutator.io/github.com/yii-extension/______/master)](https://dashboard.stryker-mutator.io/reports/github.com/yii-extension/______/master)
+[![static analysis](https://github.com/yii-extension/______/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/______/actions?query=workflow%3A%22static+analysis%22)
 
-</br>
+### Unit testing
 
-### **REQUIREMENTS:**
+The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
 
-- The minimum requirement by this project template that your Web server supports:
-    - PHP 7.4 or higher.
-    - [Composer Config Plugin](https://github.com/hiqdev/composer-config-plugin)
+```php
+./vendor/bin/phpunit
+```
 
-### **RUN TESTS CODECEPTION:**
+### Mutation testing
 
-~~~
-// download all composer dependencies root project
-$ composer update --prefer-dist -vvv
+The package tests are checked with [Infection](https://infection.github.io/) mutation framework. To run it:
 
-// download & run crhomedriver version chrome desktop
-$ wget -P vendor/bin https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_linux64.zip
-$ unzip -o -q vendor/bin/chromedriver_linux64.zip
-$ vendor/bin/chromedriver --port=9515 --url-base=wd/hub/ > /dev/null 2>&1&
+```php
+./vendor/bin/infection
+```
 
-// run web server cli php
-$ php -S 127.0.0.1:8080 -t tests/public > /dev/null 2>&1&
+### Static analysis
 
-// run all tests with code coverage
-$ vendor/bin/codecept run --coverage-xml
-~~~
+The code is statically analyzed with [Phan](https://github.com/phan/phan/wiki). To run static analysis:
 
-### **WEB SERVER SUPPORT:**
+```php
+./vendor/bin/phan
+```
 
-- Apache.
-- Nginx.
-- OpenLiteSpeed.
+### Credits
 
-### **DOCUMENTATION STYLE GUIDE:**
-
-[Style CI Documentation PSR2.](https://docs.styleci.io/presets#psr2)
-
-### **LICENCE:**
-
-[![License](https://poser.pugx.org/yii-extensions/template/license)](LICENSE.md)
-[![YiiFramework](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
-[![Total Downloads](https://poser.pugx.org/yii-extensions/template/downloads)](https://packagist.org/packages/yii-extensions/template)
-[![StyleCI](https://github.styleci.io/repos/202799699/shield?branch=master)](https://github.styleci.io/repos/202799699)
+- Larry Garfield (@crell) for initial implementation of deriving callable parameter type.
