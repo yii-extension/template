@@ -37,7 +37,3 @@ The code is statically analyzed with [Phan](https://github.com/phan/phan/wiki). 
 ```php
 ./vendor/bin/phan
 ```
-
-### Credits
-
-- Larry Garfield (@crell) for initial implementation of deriving callable parameter type.
