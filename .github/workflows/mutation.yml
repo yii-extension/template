@@ -11,7 +11,6 @@ jobs:
     name: PHP ${{ matrix.php-version }}-${{ matrix.os }}
 
     env:
-      key: cache-v1
       update: true
 
     runs-on: ${{ matrix.os }}
@@ -27,14 +26,6 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2"
-
-      - name: Setup cache environment
-        id: cache-env
-        uses: shivammathur/cache-extensions@1.1.0
-        with:
-          php-version: ${{ matrix.php-version }}
-          extensions: ${{ env.extensions }}
-          key: ${{ env.key }}
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@v2"
