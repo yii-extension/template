@@ -11,6 +11,6 @@
 
 | Q                | A
 | ---------------- | ---
-| Version          | 
+| Version          | 1.0.?
 | PHP version      | 
 | Operating system |

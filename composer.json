@@ -1,5 +1,5 @@
 {
-    "name": "yii-extension/_____",
+    "name": "yii-extension/template",
     "type": "library",
     "description": "_____",
     "keywords": [
@@ -9,21 +9,21 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.4"
+        "php": "^7.4|^8.0"
     },
     "require-dev": {
-        "infection/infection": "^0.16.3",
-        "phan/phan": "^3.0.2",
-        "phpunit/phpunit": "^9.2"
+        "phpunit/phpunit": "^9.5",
+        "roave/infection-static-analysis-plugin": "^1.7",
+        "vimeo/psalm": "^4.3"
     },
     "autoload": {
         "psr-4": {
-            "Yii\\Extension\\_____\\": "src"
+            "Template\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yii\\Extension\\_____\\Tests\\": "tests"
+            "Template\\Tests\\": "tests"
         }
     },
     "extra": {

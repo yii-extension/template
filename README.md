@@ -1,24 +1,22 @@
 <p align="center">
-    <a href="https://github.com/yii-extensions/template" target="_blank">
-        <img src="https://lh3.googleusercontent.com/9Gh9KzBOJXEmZZBlcASTrmUGNzjfaD6HHt0qtRthAX0a4jBD6-qBrJnglg5bYZGUh5wmR-idUWVHJ3Jh0HKKchnuPfwtD8YV3pHVZaDftfhx0da84gkG2MoPSSSqdVqh5tqTke0Q=w2400" height="50px;">
+    <a href="https://github.com/yii-extension" target="_blank">
+        <img src="https://lh3.googleusercontent.com/ehSTPnXqrkk0M3U-UPCjC0fty9K6lgykK2WOUA2nUHp8gIkRjeTN8z8SABlkvcvR-9PIrboxIvPGujPgWebLQeHHgX7yLUoxFSduiZrTog6WoZLiAvqcTR1QTPVRmns2tYjACpp7EQ=w2400" height="100px">
     </a>
-    <h1 align="center">Github Template</h1>
+    <h1 align="center">Template for Yii Packages</h1>
     <br>
 </p>
 
-[![Latest Stable Version](https://poser.pugx.org/yii-extension/______/v/stable.png)](https://packagist.org/packages/yii-extension/______)
-[![Total Downloads](https://poser.pugx.org/yii-extension/______/downloads.png)](https://packagist.org/packages/yii-extension/______)
-[![Build Status](https://github.com/yii-extension/______/workflows/build/badge.svg)](https://github.com/yii-extension/______/actions?query=workflow%3Abuild)
-[![Code Coverage](https://scrutinizer-ci.com/g/yii-extension/______/badges/coverage.png)](https://scrutinizer-ci.com/g/yii-extension/______/)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yii-extension/______/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yii-extension/______/?branch=master)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https://badge-api.stryker-mutator.io/github.com/yii-extension/______/master)](https://dashboard.stryker-mutator.io/reports/github.com/yii-extension/______/master)
-[![static analysis](https://github.com/yii-extension/______/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/______/actions?query=workflow%3A%22static+analysis%22)
+[![Total Downloads](https://poser.pugx.org/yii-extension/template/downloads.png)](https://packagist.org/packages/yii-extension/template)
+[![Build Status](https://github.com/yii-extension/template/workflows/build/badge.svg)](https://github.com/yii-extension/template/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/yii-extension/template/branch/main/graph/badge.svg?token=KB6T5KMGED)](https://codecov.io/gh/yii-extension/template)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https://badge-api.stryker-mutator.io/github.com/yii-extension/template/master)](https://dashboard.stryker-mutator.io/reports/github.com/yii-extension/template/master)
+[![static analysis](https://github.com/yii-extension/template/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/template/actions?query=workflow%3A%22static+analysis%22)
 
 ### Unit testing
 
 The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
 
-```php
+```shell
 ./vendor/bin/phpunit
 ```
 
@@ -26,7 +24,7 @@ The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
 
 The package tests are checked with [Infection](https://infection.github.io/) mutation framework. To run it:
 
-```php
+```shell
 ./vendor/bin/infection
 ```
 
@@ -34,6 +32,13 @@ The package tests are checked with [Infection](https://infection.github.io/) mut
 
 The code is statically analyzed with [Phan](https://github.com/phan/phan/wiki). To run static analysis:
 
-```php
+```shell
 ./vendor/bin/phan
 ```
+
+## License
+
+The Template for Yii Packages is free software. It is released under the terms of the BSD License.
+Please see [`LICENSE`](./LICENSE.md) for more information.
+
+Maintained by [Yii Extension](https://github.com/yii-extension).
