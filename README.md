@@ -12,6 +12,13 @@
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https://badge-api.stryker-mutator.io/github.com/yii-extension/template/master)](https://dashboard.stryker-mutator.io/reports/github.com/yii-extension/template/master)
 [![static analysis](https://github.com/yii-extension/template/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/template/actions?query=workflow%3A%22static+analysis%22)
 
+
+## Installation
+
+```shell
+composer require <vendor/your-packages>
+```
+
 ### Unit testing
 
 The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
@@ -36,7 +43,7 @@ The code is statically analyzed with [Phan](https://github.com/phan/phan/wiki). 
 ./vendor/bin/phan
 ```
 
-## License
+### License
 
 The Template for Yii Packages is free software. It is released under the terms of the BSD License.
 Please see [`LICENSE`](./LICENSE.md) for more information.
